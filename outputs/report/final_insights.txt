@@ -1,0 +1,64 @@
+========== BITCOIN SENTIMENT ANALYSIS — FINAL INSIGHTS ==========
+Date Range: May 2023 → May 2025
+Total Trades Analyzed: 207,327
+
+------------------------------------------------------------------
+1. PERFORMANCE BY SENTIMENT
+------------------------------------------------------------------
+- Extreme Greed → Highest avg PnL ($66.11) and win rate (46.24%)
+- Fear          → Avg PnL ($53.50), win rate (41.98%)
+- Extreme Fear  → Lowest avg PnL ($31.27) and win rate (36.90%)
+- Greed         → Avg PnL ($42.43), win rate (38.81%)
+
+CONCLUSION: Traders perform 111% better in Extreme Greed vs Extreme Fear.
+
+------------------------------------------------------------------
+2. LEVERAGE BEHAVIOR
+------------------------------------------------------------------
+- Extreme Greed → Avg leverage proxy: 953.50 (highest)
+- Extreme Fear  → Avg leverage proxy: 430.18 (lowest)
+- Greed         → Avg leverage proxy: 895.41
+- Fear          → Avg leverage proxy: 408.72
+
+CONCLUSION: Traders take 2.2x more leverage during Greed vs Fear.
+
+------------------------------------------------------------------
+3. HIGH LEVERAGE PATTERN
+------------------------------------------------------------------
+- High leverage during Fear  → Avg PnL: $115.25
+- High leverage during Greed → Avg PnL: $105.09
+
+CONCLUSION: Surprisingly, high leverage trades yield MORE during Fear.
+            This suggests experienced traders use high leverage selectively
+            during Fear when prices are undervalued.
+
+------------------------------------------------------------------
+4. LEVERAGE VS PNL CORRELATION
+------------------------------------------------------------------
+- Correlation: 0.0167 (near zero)
+
+CONCLUSION: Leverage size alone does NOT predict PnL.
+            Strategy and timing matter more than leverage amount.
+
+------------------------------------------------------------------
+5. TRADE FREQUENCY
+------------------------------------------------------------------
+- Most trades happen during Fear (61,011) and Greed (49,127)
+- Least trades during Extreme Fear (21,235)
+
+CONCLUSION: Traders are most active during moderate sentiment,
+            and pull back during Extreme Fear.
+
+------------------------------------------------------------------
+STRATEGY SUGGESTIONS
+------------------------------------------------------------------
+1. BEST TIME TO TRADE   → During Greed or Extreme Greed phases
+2. LEVERAGE CONTROL     → Keep leverage low during Extreme Fear
+3. OPPORTUNISTIC PLAY   → High leverage selectively during Fear
+                          can yield above average returns
+4. AVOID               → High frequency trading during Extreme Fear
+                          (lowest win rate at 36.90%)
+5. RISK CONTROL        → Win rate never exceeds 47% in any condition
+                          Always use stop loss regardless of sentiment
+
+==================================================================
