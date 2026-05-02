@@ -37,5 +37,24 @@ def run_eda():
     df['high_leverage'] = df['leverage_proxy'] > df['leverage_proxy'].quantile(0.75)
     print(df[df['high_leverage']].groupby('market_condition')['closed_pnl'].mean().round(2))
 
+def coin_analysis():
+    df = pd.read_csv(os.path.join(PROCESSED_PATH, "featured_data.csv"))
+
+    print("========== COIN ANALYSIS ==========")
+
+    # 1. Avg PnL by coin
+    print("\n1. Avg PnL by Coin:")
+    print(df.groupby('coin')['closed_pnl'].mean().round(2).sort_values(ascending=False).head(10))
+
+    # 2. Win rate by coin
+    print("\n2. Win Rate by Coin (%):")
+    print((df.groupby('coin')['is_win'].mean() * 100).round(2).sort_values(ascending=False).head(10))
+
+    # 3. Avg PnL by coin + sentiment
+    print("\n3. Avg PnL — Top 5 Coins by Sentiment:")
+    top5 = df['coin'].value_counts().head(5).index
+    print(df[df['coin'].isin(top5)].groupby(['coin', 'classification'])['closed_pnl'].mean().round(2))
+
 if __name__ == "__main__":
     run_eda()
+    coin_analysis()
